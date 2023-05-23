@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>FinDash - Responsive Bootstrap 4 Admin Dashboard Template</title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="css/typography.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+
+      <script src="js/admin/addModel.js"></script>
+
+   </head>
+   <body class="sidebar-main-active right-column-fixed">
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+      <!-- Wrapper Start -->
+      <div class="wrapper">
+
+         <!-- Sidebar  -->
+         <div class="iq-sidebar">
+            <div class="iq-navbar-logo d-flex justify-content-between">
+
+               <img  id="adminPhoto" class="img-fluid rounded" alt="" width="55" height="100">
+               <div class="caption">
+                  <h6 class="mb-0 line-height" id="adminUsername"></h6>
+                  <p class="mb-0" id="adminPostiton"></p>
+               </div>
+               </a>
+               <div class="iq-menu-bt align-self-center" style="visibility: hidden;">
+                  <div class="wrapper-menu">
+                     <div class="main-circle"><i class="ri-menu-line"></i></div>
+                     <div class="hover-circle"><i class="ri-close-fill"></i></div>
+                  </div>
+               </div>
+            </div>
+            <div id="sidebar-scrollbar">
+               <nav class="iq-sidebar-menu">
+                  <ul id="iq-sidebar-toggle" class="iq-menu">                   
+                     
+                     <!--li>
+                        <a href="editAdmin.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-user-tie iq-arrow-left"></i><span>حساب الادمن</span></i></a>
+                     </li>
+                    
+                     <li>
+                        <a href="management.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-edit iq-arrow-left"></i><span>الادارة</span></i></a>
+                     </li>
+                    
+                     <li>
+                        <a href="shops.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-store iq-arrow-left"></i><span>المحلات</span></i></a>
+                     </li>
+                     <li>
+                        <a href="orders.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-tshirt iq-arrow-left"></i><span>الاوردرات</span></i></a>
+                     </li>
+                     
+                     <li>
+                        <a href="payments.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-money-bill iq-arrow-left"></i><span>دفع عمولات</span></i></a>
+                     </li>
+                     <li>
+                        <a href="statistics.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-chart-bar iq-arrow-left"></i><span>احصائيات</span></i></a>
+                     </li>
+                     <li>
+                        <a onclick="logout();" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-sign-out-alt iq-arrow-left"></i><span>تسجيل الخروج</span></i></a>
+                     </li-->
+
+                  </ul>
+               </nav>
+               <div class="p-3"></div>
+            </div>
+         </div>
+         
+         
+         <!-- Page Content  -->
+         <div id="content-page" class="content-page" style="position: relative; top: -80px;">
+            <div class="container-fluid">
+               <div class="row">
+
+
+                <div class="col-lg-12">
+                    <div class="iq-card">
+                       <div class="iq-card-header d-flex justify-content-between" dir="rtl">
+                          <div class="iq-header-title">
+                             <h4  class="card-title">بيانات الموديل </h4>
+                          </div>
+                       </div>
+                       <div class="iq-card-body">
+                          <div class="new-user-info">
+                             <form>
+                                <div class="row" dir="rtl">
+                                 <div class="form-group col-md-6">
+                                    <input id="price_get" type="text" class="form-control pull-right" placeholder= "سعر الشراء">
+                                 </div>
+                                 <div class="form-group col-md-6">
+                                    <input id="price" type="text" class="form-control pull-right" placeholder= "السعر">
+                                 </div>
+                                   <div class="form-group col-md-6">
+                                    <input id="description" type="text" class="form-control pull-right" placeholder= "الوصف">
+                                 </div>
+                                   <div class="form-group col-md-6">
+                                    <input id="url" type="text" class="form-control pull-right" placeholder= "رابط الصورة">
+                                 </div>
+                              </div>
+                                <hr>
+                                <div class="text-center">
+                                    <button onclick="addModel();" type="button" class="btn btn-primary" style="color: white;">اضافة الى التصنيف</button>
+                                </div>
+                             </form>
+                          </div>
+                       </div>
+                    </div>
+                 </div>   
+
+
+               </div>
+            </div>
+         </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Appear JavaScript -->
+      <script src="js/jquery.appear.js"></script>
+      <!-- Countdown JavaScript -->
+      <script src="js/countdown.min.js"></script>
+      <!-- Counterup JavaScript -->
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <!-- Wow JavaScript -->
+      <script src="js/wow.min.js"></script>
+      <!-- Apexcharts JavaScript -->
+      <script src="js/apexcharts.js"></script>
+      <!-- Slick JavaScript -->
+      <script src="js/slick.min.js"></script>
+      <!-- Select2 JavaScript -->
+      <script src="js/select2.min.js"></script>
+      <!-- Owl Carousel JavaScript -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- Magnific Popup JavaScript -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Smooth Scrollbar JavaScript -->
+      <script src="js/smooth-scrollbar.js"></script>
+      <!-- lottie JavaScript -->
+      <script src="js/lottie.js"></script>
+      <!-- am core JavaScript -->
+      <script src="js/core.js"></script>
+      <!-- am charts JavaScript -->
+      <script src="js/charts.js"></script>
+      <!-- am animated JavaScript -->
+      <script src="js/animated.js"></script>
+      <!-- am kelly JavaScript -->
+      <script src="js/kelly.js"></script>
+      <!-- am maps JavaScript -->
+      <script src="js/maps.js"></script>
+      <!-- am worldLow JavaScript -->
+      <script src="js/worldLow.js"></script>
+      <!-- Style Customizer -->
+      <script src="js/style-customizer.js"></script>
+      <!-- Chart Custom JavaScript -->
+      <script src="js/chart-custom.js"></script>
+      <!-- Custom JavaScript -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>

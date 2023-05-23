@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>FinDash - Responsive Bootstrap 4 Admin Dashboard Template</title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="css/typography.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- Full calendar -->
+      <link href='fullcalendar/core/main.css' rel='stylesheet' />
+      <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+      <link href='fullcalendar/timegrid/main.css' rel='stylesheet' />
+      <link href='fullcalendar/list/main.css' rel='stylesheet' />
+
+      <link rel="stylesheet" href="css/flatpickr.min.css">
+
+   </head>
+   <body>
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+      <!-- Wrapper Start -->
+      <div class="wrapper">
+         <!-- Sidebar  -->
+         <div class="iq-sidebar">
+            <div class="iq-navbar-logo d-flex justify-content-between">
+
+               <img src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/291750143_5480834031966952_7792341688609574269_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGcsOQpeyYf5HWh71tGUj71DzvG_gwroRQPO8b-DCuhFAl59bXQyu0YpV-QPx-k7-oocvRhL69SpaoNM4pxmf1O&_nc_ohc=7Kz-3-JgfakAX_v9GNl&_nc_oc=AQlo5tRQXDRWBU06z9nxAi2IOt6c_ijvMz9V4BGIwaEaZfLyprv9E37R-x9zvvt82Qc&tn=Hn9Zmedl3kpyRPyc&_nc_ht=scontent.fcai19-1.fna&oh=00_AfCES2VkwG-hvXwYn4zkydzdvlYgr3FBzdtBjiA9ghd5fg&oe=63F974CE" class="img-fluid rounded" alt="" width="55" height="100">
+               <div class="caption">
+                  <h6 class="mb-0 line-height">eiad_assem</h6>
+                  <p class="mb-0">Manager</p>
+               </div>
+               </a>
+               <div class="iq-menu-bt align-self-center" style="visibility: hidden;">
+                  <div class="wrapper-menu">
+                     <div class="main-circle"><i class="ri-menu-line"></i></div>
+                     <div class="hover-circle"><i class="ri-close-fill"></i></div>
+                  </div>
+               </div>
+            </div>
+            <div id="sidebar-scrollbar">
+               <nav class="iq-sidebar-menu">
+                  <ul id="iq-sidebar-toggle" class="iq-menu">                   
+                     
+                     <li>
+                        <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-user-tie iq-arrow-left"></i><span>حساب الادمن</span></i></a>
+                     </li>
+                    
+                     <li>
+                        <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-edit iq-arrow-left"></i><span>الادارة</span></i></a>
+                     </li>
+                    
+                     <li>
+                        <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-store iq-arrow-left"></i><span>المحلات</span></i></a>
+                     </li>
+                     <li>
+                        <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-tshirt iq-arrow-left"></i><span>الاوردرات</span></i></a>
+                     </li>
+                     
+                     <li>
+                        <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-money-bill iq-arrow-left"></i><span>دفع عمولات</span></i></a>
+                     </li>
+                     <li>
+                        <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-chart-bar iq-arrow-left"></i><span>احصائيات</span></i></a>
+                     </li>
+                     <li>
+                        <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-sign-out-alt iq-arrow-left"></i><span>تسجيل الخروج</span></i></a>
+                     </li>
+
+                  </ul>
+               </nav>
+               <div class="p-3"></div>
+            </div>
+         </div>
+         
+         <!-- Page Content  -->
+         <div id="content-page" class="content-page">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-lg-12"><h1 class="text-right">احصائيات</h1></div>
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">اجمالي الارباح</p>
+                           <div class="text-center">
+                              <h4><b>100000 جنيه</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">اجمالي الشهر</p>
+                           <div class="text-center">
+                              <h4><b>100000 جنيه</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">اجمالي اليوم</p>
+                           <div class="text-center">
+                              <h4><b>100000 جنيه</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">عدد المستخدمين</p>
+                           <div class="text-center">
+                              <h4><b>1000 مستخدم</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">اجمالي عدد الاوردرات</p>
+                           <div class="text-center">
+                              <h4><b>12000 اوردر</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">عدد اوردرات الشهر</p>
+                           <div class="text-center">
+                              <h4><b>600 اوردر</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">عدد اوردرات اليوم</p>
+                           <div class="text-center">
+                              <h4><b>50 اوردر</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">اوردرات متبقية</p>
+                           <div class="text-center">
+                              <h4><b>26 اوردر</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">اجمالي العمولات</p>
+                           <div class="text-center">
+                              <h4><b>5143 جنيه</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">عمولات الشهر</p>
+                           <div class="text-center">
+                              <h4><b>1275 جنيه</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">عمولات اليوم</p>
+                           <div class="text-center">
+                              <h4><b>105 جنيه</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3" dir="rtl">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary text-center">عمولات متبقية</p>
+                           <div class="text-center">
+                              <h4><b>496 جنيه</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="col-lg-12"><h1 class="text-right">مخطط المبيعات</h1></div>
+                  <div class="col-sm-12 col-lg-12">
+                     <div class="iq-card">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Line Chart</h4>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <div id="apex-basic"></div>
+                        </div>
+                     </div>
+                   </div>
+
+
+
+
+
+
+
+
+
+                   <div class="col-lg-12"><h1 class="text-right">اوردرات</h1></div>
+                   <div class="col-lg-12">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Open Invoices</h4>
+                           </div>
+                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                              <div class="dropdown">
+                                 <span class="dropdown-toggle text-primary" id="dropdownMenuButton5" data-toggle="dropdown">
+                                 <i class="ri-more-fill"></i>
+                                 </span>
+                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton5">
+                                    <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <div class="table-responsive">
+                              <table class="table mb-0">
+                                 <thead class="thead-light">
+                                    <tr class="text-center">
+                                       <th scope="col">تفاصيل</th>
+                                       <th scope="col">الحالة</th>
+                                       <th scope="col">الاجمالي</th>
+                                       <th scope="col">العنوان</th>
+                                       <th scope="col">رقم التليفون</th>
+                                       <th scope="col">اوردر بأسم</th>
+                                       <th scope="col">التاريخ</th>
+                                       <th scope="col">اسم المستخدم</th>
+                                       <th scope="col">رقم الاوردر</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr class="text-center">
+                                       <td><a class="btn btn-primary" href="#">تفاصيل</a></td>
+                                       <td>
+                                          <div class="badge badge-pill badge-success">نم الاستلام</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td dir="rtl">12  شارع القذافس مع الحلو عند سوبر مارت برديس</td>
+                                       <td>01203724030</td>
+                                       <td>اياد عاصم الفاعي</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_elrefay</td>
+                                       <td>1234</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td><a class="btn btn-primary" href="#">تفاصيل</a></td>
+                                       <td>
+                                          <div class="badge badge-pill badge-success">نم الاستلام</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>12 شارع القذافس مع الحلو عند سوبر مارت برديس</td>
+                                       <td>01203724030</td>
+                                       <td>اياد عاصم الفاعي</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_elrefay</td>
+                                       <td>1234</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td><a class="btn btn-primary" href="#">تفاصيل</a></td>
+                                       <td>
+                                          <div class="badge badge-pill badge-success">نم الاستلام</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>12 شارع القذافس مع الحلو عند سوبر مارت برديس</td>
+                                       <td>01203724030</td>
+                                       <td>اياد عاصم الفاعي</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_elrefay</td>
+                                       <td>1234</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td><a class="btn btn-primary" href="#">تفاصيل</a></td>
+                                       <td>
+                                          <div class="badge badge-pill badge-warning">في انتظار التوصيل</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>12 شارع القذافس مع الحلو عند سوبر مارت برديس</td>
+                                       <td>01203724030</td>
+                                       <td>اياد عاصم الفاعي</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_elrefay</td>
+                                       <td>1234</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td><a class="btn btn-primary" href="#">تفاصيل</a></td>
+                                       <td>
+                                          <div class="badge badge-pill badge-primary">في انتظار التأكيد</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>12 شارع القذافس مع الحلو عند سوبر مارت برديس</td>
+                                       <td>01203724030</td>
+                                       <td>اياد عاصم الفاعي</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_elrefay</td>
+                                       <td>1234</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td><a class="btn btn-primary" href="#">تفاصيل</a></td>
+                                       <td>
+                                          <div class="badge badge-pill badge-primary">في انتظار التأكيد</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>12 شارع القذافس مع الحلو عند سوبر مارت برديس</td>
+                                       <td>01203724030</td>
+                                       <td>اياد عاصم الفاعي</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_elrefay</td>
+                                       <td>1234</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td><a class="btn btn-primary" href="#">تفاصيل</a></td>
+                                       <td>
+                                          <div class="badge badge-pill badge-primary">في انتظار التأكيد</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>12 شارع القذافس مع الحلو عند سوبر مارت برديس</td>
+                                       <td>01203724030</td>
+                                       <td>اياد عاصم الفاعي</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_elrefay</td>
+                                       <td>1234</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td><a class="btn btn-primary" href="#">تفاصيل</a></td>
+                                       <td>
+                                          <div class="badge badge-pill badge-primary">في انتظار التأكيد</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>12 شارع القذافس مع الحلو عند سوبر مارت برديس</td>
+                                       <td>01203724030</td>
+                                       <td>اياد عاصم الفاعي</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_elrefay</td>
+                                       <td>1234</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td><a class="btn btn-primary" href="#">تفاصيل</a></td>
+                                       <td>
+                                          <div class="badge badge-pill badge-primary">في انتظار التأكيد</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>12 شارع القذافس مع الحلو عند سوبر مارت برديس</td>
+                                       <td>01203724030</td>
+                                       <td>اياد عاصم الفاعي</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_elrefay</td>
+                                       <td>1234</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td><a class="btn btn-primary" href="#">تفاصيل</a></td>
+                                       <td>
+                                          <div class="badge badge-pill badge-primary">في انتظار التأكيد</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>12 شارع القذافس مع الحلو عند سوبر مارت برديس</td>
+                                       <td>01203724030</td>
+                                       <td>اياد عاصم الفاعي</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_elrefay</td>
+                                       <td>1234</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div class="col-lg-12"><h1 class="text-right">عمليات سحب عمولة</h1></div>
+                   <div class="col-lg-12">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Open Invoices</h4>
+                           </div>
+                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                              <div class="dropdown">
+                                 <span class="dropdown-toggle text-primary" id="dropdownMenuButton5" data-toggle="dropdown">
+                                 <i class="ri-more-fill"></i>
+                                 </span>
+                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton5">
+                                    <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <div class="table-responsive">
+                              <table class="table mb-0">
+                                 <thead class="thead-light">
+                                    <tr class="text-center">
+                                       <th scope="col">الحالة</th>
+                                       <th scope="col">المبلغ</th>
+                                       <th scope="col">رقم المحفظة</th>
+                                       <th scope="col">التاريخ</th>
+                                       <th scope="col">اسم المستخدم</th>
+                                       <th scope="col">رقم العملية</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr class="text-center">
+                                       <td>
+                                          <a href="#"><div class="badge badge-pill badge-success">تم الدفع</div></a>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>01064009414</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_assem</td>
+                                       <td>1234567</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td>
+                                          <a href="#"><div class="badge badge-pill badge-success">تم الدفع</div></a>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>01064009414</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_assem</td>
+                                       <td>1234567</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td>
+                                          <div class="badge badge-pill badge-danger">لم يتم الدفع</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>01064009414</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_assem</td>
+                                       <td>1234567</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td>
+                                          <div class="badge badge-pill badge-danger">لم يتم الدفع</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>01064009414</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_assem</td>
+                                       <td>1234567</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td>
+                                          <div class="badge badge-pill badge-danger">لم يتم الدفع</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>01064009414</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_assem</td>
+                                       <td>1234567</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td>
+                                          <div class="badge badge-pill badge-success">تم الدفع</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>01064009414</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_assem</td>
+                                       <td>1234567</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td>
+                                          <div class="badge badge-pill badge-success">تم الدفع</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>01064009414</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_assem</td>
+                                       <td>1234567</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td>
+                                          <div class="badge badge-pill badge-danger">لم يتم الدفع</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>01064009414</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_assem</td>
+                                       <td>1234567</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td>
+                                          <div class="badge badge-pill badge-success">تم الدفع</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>01064009414</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_assem</td>
+                                       <td>1234567</td>
+                                    </tr>
+                                    <tr class="text-center">
+                                       <td>
+                                          <div class="badge badge-pill badge-danger">لم يتم الدفع</div>
+                                       </td>
+                                       <td dir="rtl">1500 ج.م</td>
+                                       <td>01064009414</td>
+                                       <td>18/10/2019</td>
+                                       <td>eiad_assem</td>
+                                       <td>1234567</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+                  
+                  <div class="col-lg-12"><h1 class="text-right">أهم المتاجر</h1></div>
+                   <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="card iq-mb-3">
+                        <img height="185" src="https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/297595882_1012682086072705_1523897038554331124_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEnWErcfmz5R9Am1sFSvLC6S42epkBKsv9LjZ6mQEqy_-lOp7vwVoNnQxjQY5KjVVRT9MWCkfLYnl7zNNlRSjUR&_nc_ohc=oIzX-09imLoAX_g47ZX&_nc_ht=scontent-hbe1-1.xx&oh=00_AfC4A-i2xcOcNxN2MpwnWuAw6muJHWG5n1D7NiOrKgDFAQ&oe=63F684A2" class="card-img-top" alt="#">
+                        <div class="card-body">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h4 class="card-title">stop wars</h4>
+                              </div>
+                              <div class="col-lg-6">
+                                 <a href="#" class="btn btn-primary">مزيد من التفاصيل</a>
+                              </div>
+                           </div>
+                           <!--p class="card-text">شارع حسان بن ثابت مع ممتاز غرابة</p-->
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="card iq-mb-3">
+                        <img height="185" src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/279461040_1479575629111044_5022261494852332882_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHberTWPfXNK-IX2iYvJlw7jaG8SyzjJnyNobxLLOMmfH6Rq2ICjvfhXRNKsnrrV0qD4mLnpHr9oFYTqUwtkGgN&_nc_ohc=KNQ2Z5XgRrkAX_S1P13&_nc_ht=scontent.fcai19-1.fna&oh=00_AfBA-KAbmiyHsgihzJwILWl-CR4ttD8aaL_oGEM40Vq3AQ&oe=63F5D2AC" class="card-img-top" alt="#">
+                        <div class="card-body">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h4 class="card-title">beka</h4>
+                              </div>
+                              <div class="col-lg-6">
+                                 <a href="#" class="btn btn-primary">مزيد من التفاصيل</a>
+                              </div>
+                           </div>
+                           <!--p class="card-text">شارع حسان بن ثابت مع ممتاز غرابة</p-->
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="card iq-mb-3">
+                        <img height="185" src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/273581800_5289677324378604_4157975135284027244_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHuQgqCnfPbc-Qi01TSwNy0GNdFXdRiwz0Y10Vd1GLDPQk4oHbC4dMxgygpzBTQ33pT5Mq7SNIdDy3cJMwC9QUy&_nc_ohc=LDEndQfURnUAX8NM_n7&tn=Hn9Zmedl3kpyRPyc&_nc_ht=scontent.fcai19-1.fna&oh=00_AfA_GU1MIEaTvIMNNwjy_2VRaN-ojqxnZvCpz1Ve7ovW2Q&oe=63F6A143" class="card-img-top" alt="#">
+                        <div class="card-body">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h4 class="card-title">town team</h4>
+                              </div>
+                              <div class="col-lg-6">
+                                 <a href="#" class="btn btn-primary">مزيد من التفاصيل</a>
+                              </div>
+                           </div>
+                           <!--p class="card-text">شارع حسان بن ثابت مع ممتاز غرابة</p-->
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="card iq-mb-3">
+                        <img height="185" src="https://scontent-hbe1-1.xx.fbcdn.net/v/t1.6435-9/52599227_781679015520079_5152894447964389376_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGHIULo2YjsfyVnIDiFs3NXx_4W_JkCytHH_hb8mQLK0Wz7a75SijNfyjtS3WPZPrT_DybzLbFSEm2ET2V8Fsda&_nc_ohc=ybSBEj0jPNAAX9Ge-by&_nc_ht=scontent-hbe1-1.xx&oh=00_AfAGHOgqFqfjN-Hne4jH84vjlQX5WQHss3D85FhFnpmtOg&oe=6418817C" class="card-img-top" alt="#">
+                        <div class="card-body">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h4 class="card-title">bafra</h4>
+                              </div>
+                              <div class="col-lg-6">
+                                 <a href="#" class="btn btn-primary">مزيد من التفاصيل</a>
+                              </div>
+                           </div>
+                           <!--p class="card-text">شارع حسان بن ثابت مع ممتاز غرابة</p-->
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="card iq-mb-3">
+                        <img height="185" src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/278973842_434032875153682_3904691729489189000_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFQC3I11gP90RbgTvIJaHpv0G38MzP3xInQbfwzM_fEiWAxb9vOvrgV2Ne2ka_hAuoCZ0R8Z-zZoZj9uqj75FFS&_nc_ohc=iGPl2q_YG3QAX81iJFF&_nc_ht=scontent.fcai19-1.fna&oh=00_AfDtYBZeDOdeYjinJMhcX37cmx5nHLvl8E-py-S-nzmQVQ&oe=63F5DE04" class="card-img-top" alt="#">
+                        <div class="card-body">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h4 class="card-title">messi</h4>
+                              </div>
+                              <div class="col-lg-6">
+                                 <a href="#" class="btn btn-primary">مزيد من التفاصيل</a>
+                              </div>
+                           </div>
+                           <!--p class="card-text">شارع حسان بن ثابت مع ممتاز غرابة</p-->
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="card iq-mb-3">
+                        <img height="185" src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/291048676_102654032508629_455601216370743924_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHickctOzJkaY21ETBF0E48DQ2CvhXGCHANDYK-FcYIcMyPa0vUW2iD7oq80c34-JRc8tthvUSx4MHTnOxQ3m1L&_nc_ohc=nDpoXszMDr0AX9y-nZi&_nc_ht=scontent.fcai19-1.fna&oh=00_AfAVrBdLOmNrQsMKLIOX8YQW5Tt3XXgPqIb1yp_5r3jvbw&oe=63F6866D" class="card-img-top" alt="#">
+                        <div class="card-body">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h4 class="card-title">كوتشنجي</h4>
+                              </div>
+                              <div class="col-lg-6">
+                                 <a href="#" class="btn btn-primary">مزيد من التفاصيل</a>
+                              </div>
+                           </div>
+                           <!--p class="card-text">شارع حسان بن ثابت مع ممتاز غرابة</p-->
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="card iq-mb-3">
+                        <img height="185" src="https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/242278838_4595093513861983_7377522498756735820_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGxPPUAnwmKcCubuIAqOaF2GmXaefoJa5caZdp5-glrl-8te_bV83jZqrjo2K8xW3MvwtRy3w_LMasckc1y7cjd&_nc_ohc=41DxXtz02WwAX9vkjd9&_nc_ht=scontent-hbe1-1.xx&oh=00_AfAVCeS9xT_o2Ch94-XRwSSgGQGJAzd3joPxeX06m-zXNQ&oe=63F55A5D" class="card-img-top" alt="#">
+                        <div class="card-body">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h4 class="card-title">wall</h4>
+                              </div>
+                              <div class="col-lg-6">
+                                 <a href="#" class="btn btn-primary">مزيد من التفاصيل</a>
+                              </div>
+                           </div>
+                           <!--p class="card-text">شارع حسان بن ثابت مع ممتاز غرابة</p-->
+                        </div>
+                     </div>
+                  </div>
+
+
+                   <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="card iq-mb-3">
+                        <img height="185" src="https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/306502389_480985770727665_558071173402196437_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH_b1czBtLi18DCIW5pEQE3jHt3Eeb1YL2Me3cR5vVgvW-2AJuEL2JjvYx6ZsiQOQELPlCN8mmcVRRunWUaszMo&_nc_ohc=5HRaylQlZI8AX_efK0x&tn=Hn9Zmedl3kpyRPyc&_nc_ht=scontent-hbe1-1.xx&oh=00_AfCMHApiSMdsVlvwvtjZsMFaQ1UzSCkAAkkjycy6TXmVNw&oe=63F5A1C4" class="card-img-top" alt="#">
+                        <div class="card-body">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h4 class="card-title">negro</h4>
+                              </div>
+                              <div class="col-lg-6">
+                                 <a href="#" class="btn btn-primary">مزيد من التفاصيل</a>
+                              </div>
+                           </div>
+                           <!--p class="card-text">شارع حسان بن ثابت مع ممتاز غرابة</p-->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Wrapper END -->
+      <!-- Footer -->
+      <footer class="iq-footer">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-6">
+                  <ul class="list-inline mb-0">
+                     <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                     <li class="list-inline-item"><a href="terms-of-service.html">Terms of Use</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-6 text-right">
+                  Copyright 2020 <a href="#">FinDash</a> All Rights Reserved.
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer END -->
+     
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Appear JavaScript -->
+      <script src="js/jquery.appear.js"></script>
+      <!-- Countdown JavaScript -->
+      <script src="js/countdown.min.js"></script>
+      <!-- Counterup JavaScript -->
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <!-- Wow JavaScript -->
+      <script src="js/wow.min.js"></script>
+      <!-- Apexcharts JavaScript -->
+      <script src="js/apexcharts.js"></script>
+      <!-- Slick JavaScript -->
+      <script src="js/slick.min.js"></script>
+      <!-- Select2 JavaScript -->
+      <script src="js/select2.min.js"></script>
+      <!-- Owl Carousel JavaScript -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- Magnific Popup JavaScript -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Smooth Scrollbar JavaScript -->
+      <script src="js/smooth-scrollbar.js"></script>
+      <!-- lottie JavaScript -->
+      <script src="js/lottie.js"></script>
+      <!-- am core JavaScript -->
+      <script src="js/core.js"></script>
+      <!-- am charts JavaScript -->
+      <script src="js/charts.js"></script>
+      <!-- am animated JavaScript -->
+      <script src="js/animated.js"></script>
+      <!-- am kelly JavaScript -->
+      <script src="js/kelly.js"></script>
+      <!-- am maps JavaScript -->
+      <script src="js/maps.js"></script>
+      <!-- am worldLow JavaScript -->
+      <script src="js/worldLow.js"></script>
+      <!-- Raphael-min JavaScript -->
+      <script src="js/raphael-min.js"></script>
+      <!-- Morris JavaScript -->
+      <script src="js/morris.js"></script>
+      <!-- Morris min JavaScript -->
+      <script src="js/morris.min.js"></script>
+      <!-- Flatpicker Js -->
+      <script src="js/flatpickr.js"></script>
+      <!-- Style Customizer -->
+      <script src="js/style-customizer.js"></script>
+      <!-- Chart Custom JavaScript -->
+      <script src="js/chart-custom.js"></script>
+      <!-- Custom JavaScript -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>

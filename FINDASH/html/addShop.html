@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>FinDash - Responsive Bootstrap 4 Admin Dashboard Template</title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="css/typography.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+
+
+      <script src="js/admin/addShop.js"></script>
+
+   </head>
+   <body class="sidebar-main-active right-column-fixed">
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+      <!-- Wrapper Start -->
+      <div class="wrapper">
+
+         <!-- Sidebar  -->
+         <div class="iq-sidebar">
+            <div class="iq-navbar-logo d-flex justify-content-between">
+
+               <img  id="adminPhoto" class="img-fluid rounded" alt="" width="55" height="100">
+               <div class="caption">
+                  <h6 class="mb-0 line-height" id="adminUsername"></h6>
+                  <p class="mb-0" id="adminPostiton"></p>
+               </div>
+               </a>
+               <div class="iq-menu-bt align-self-center" style="visibility: hidden;">
+                  <div class="wrapper-menu">
+                     <div class="main-circle"><i class="ri-menu-line"></i></div>
+                     <div class="hover-circle"><i class="ri-close-fill"></i></div>
+                  </div>
+               </div>
+            </div>
+            <div id="sidebar-scrollbar">
+               <nav class="iq-sidebar-menu">
+                  <ul id="iq-sidebar-toggle" class="iq-menu">                   
+                     
+                     <!--li>
+                        <a href="editAdmin.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-user-tie iq-arrow-left"></i><span>حساب الادمن</span></i></a>
+                     </li>
+                    
+                     <li>
+                        <a href="management.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-edit iq-arrow-left"></i><span>الادارة</span></i></a>
+                     </li>
+                    
+                     <li>
+                        <a href="shops.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-store iq-arrow-left"></i><span>المحلات</span></i></a>
+                     </li>
+                     <li>
+                        <a href="orders.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-tshirt iq-arrow-left"></i><span>الاوردرات</span></i></a>
+                     </li>
+                     
+                     <li>
+                        <a href="payments.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-money-bill iq-arrow-left"></i><span>دفع عمولات</span></i></a>
+                     </li>
+                     <li>
+                        <a href="statistics.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-chart-bar iq-arrow-left"></i><span>احصائيات</span></i></a>
+                     </li>
+                     <li>
+                        <a onclick="logout();" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-sign-out-alt iq-arrow-left"></i><span>تسجيل الخروج</span></i></a>
+                     </li-->
+
+                  </ul>
+               </nav>
+               <div class="p-3"></div>
+            </div>
+         </div>
+         
+         
+         <!-- Page Content  -->
+         <div id="content-page" class="content-page" style="position: relative; top: -80px;">
+            <div class="container-fluid">
+               <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="iq-card text-center">
+                       <div class="iq-card-header d-flex justify-content-between" dir="rtl">
+                          <div class="iq-header-title">
+                             <h4 class="card-title">لوجو المحل</h4>
+                          </div>
+                       </div>
+                       <div class="iq-card-body">
+                          <form>
+                            <div class="form-group row align-items-center">
+                                <div class="col-md-12">
+                                   <div class="profile-img-edit">
+                                      <img src="data:image/png;base64,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" style="height: 140px;" id="showShopLogo" class="profile-pic" alt="profile-pic">
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <input id="shopLogo" type="text" class="form-control pull-right" placeholder= "صورة المحل" style="border : 1px solid grey">
+                                <br>
+                                <br>
+                            </div>
+                          </form>
+                       </div>
+                    </div>
+              </div>
+
+                <div class="col-lg-9">
+                    <div class="iq-card">
+                       <div class="iq-card-header d-flex justify-content-between" dir="rtl">
+                          <div class="iq-header-title">
+                             <h4  class="card-title">بيانات المحل </h4>
+                          </div>
+                       </div>
+                       <div class="iq-card-body">
+                          <div class="new-user-info">
+                             <form>
+                                <div class="row" dir="rtl">
+                                   <div class="form-group col-md-6">
+                                      <input type="text" class="form-control pull-right" placeholder= "اسم المحل" id="shopName">
+                                   </div>
+                                   <div class="form-group col-md-6">
+                                    <input type="text" class="form-control pull-right" placeholder= "رقم التليفون" id="shopPhone">
+                                 </div>
+                                   <div class="form-group col-md-6">
+                                    <input type="text" class="form-control pull-right" placeholder= "العنوان" id="shopAddress">
+                                 </div>                
+                                   <div class="form-group col-md-6">
+                                    <select class="form-control" id="stateSelect" onchange="stateChanged();">
+                                       <option value="state">المحافظة</option>
+                                       <option value="alex">الإسكندرية</option>
+                                       <option value="ismailia">الإسماعيلية</option>
+                                       <option value="aswan">أسوان</option>
+                                       <option value="asiot">أسيوط</option>
+                                       <option value="luxor">الأقصر</option>
+                                       <option value="red sea">البحر الأحمر</option>
+                                       <option value="behera">البحيرة</option>
+                                       <option value="bani swif">بني سويف</option>
+                                       <option value="borsaid">بورسعيد</option>
+                                       <option value="south_sinani">جنوب سيناء</option>
+                                       <option value="giza">الجيزة</option>
+                                       <option value="dakahlia">الدقهلية</option>
+                                       <option value="domyat">دمياط</option>
+                                       <option value="sohag">سوهاج</option>
+                                       <option value="suiz">السويس</option>
+                                       <option value="sharkia">الشرقية</option>
+                                       <option value="north_sinai">شمال سيناء</option>
+                                       <option value="gharbia">الغربية</option>
+                                       <option value="faiom">الفيوم</option>
+                                       <option value="cairo">القاهرة</option>
+                                       <option value="qalobia">القليوبية</option>
+                                       <option value="qena">قنا</option>
+                                       <option value="kafr_elsheikh">كفر الشيخ</option>
+                                       <option value="matroh">مطروح</option>
+                                       <option value="monofya">المنوفية</option>
+                                       <option value="elminya">المنيا</option>
+                                       <option value="new_vallage">الوادي الجديد</option>
+                                        </select>
+                                     </div>                
+                                   <div class="form-group col-md-6">
+                                    <select id="centerSelect" class="form-control" onchange="centerChanged();">
+                                       <option>المركز</option>
+                                    </select>
+                                 </div>                
+                                   <div class="form-group col-md-6">
+                                    <input type="text" class="form-control pull-right" placeholder= "خط طول" id="shopLong">
+                                 </div>                
+                                   <div class="form-group col-md-6">
+                                    <input type="text" class="form-control pull-right" placeholder= "دائرة عرض" id="shopLat">
+                                 </div>                
+                              </div>
+                                <hr>
+                                <div class="text-center">
+                                    <button type="button" onclick="addShop();" class="btn btn-warning" style="color: white;">حفظ البيانات</button>
+                                </div>
+                             </form>
+                          </div>
+                       </div>
+                    </div>
+                 </div>   
+            </div>   
+         </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Appear JavaScript -->
+      <script src="js/jquery.appear.js"></script>
+      <!-- Countdown JavaScript -->
+      <script src="js/countdown.min.js"></script>
+      <!-- Counterup JavaScript -->
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <!-- Wow JavaScript -->
+      <script src="js/wow.min.js"></script>
+      <!-- Apexcharts JavaScript -->
+      <script src="js/apexcharts.js"></script>
+      <!-- Slick JavaScript -->
+      <script src="js/slick.min.js"></script>
+      <!-- Select2 JavaScript -->
+      <script src="js/select2.min.js"></script>
+      <!-- Owl Carousel JavaScript -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- Magnific Popup JavaScript -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Smooth Scrollbar JavaScript -->
+      <script src="js/smooth-scrollbar.js"></script>
+      <!-- lottie JavaScript -->
+      <script src="js/lottie.js"></script>
+      <!-- am core JavaScript -->
+      <script src="js/core.js"></script>
+      <!-- am charts JavaScript -->
+      <script src="js/charts.js"></script>
+      <!-- am animated JavaScript -->
+      <script src="js/animated.js"></script>
+      <!-- am kelly JavaScript -->
+      <script src="js/kelly.js"></script>
+      <!-- am maps JavaScript -->
+      <script src="js/maps.js"></script>
+      <!-- am worldLow JavaScript -->
+      <script src="js/worldLow.js"></script>
+      <!-- Style Customizer -->
+      <script src="js/style-customizer.js"></script>
+      <!-- Chart Custom JavaScript -->
+      <script src="js/chart-custom.js"></script>
+      <!-- Custom JavaScript -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>

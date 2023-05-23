@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>FinDash - Responsive Bootstrap 4 Admin Dashboard Template</title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="css/typography.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+
+
+      <script src="js/admin/editShop.js"></script>
+
+   </head>
+   <body class="sidebar-main-active right-column-fixed">
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+      <!-- Wrapper Start -->
+      <div class="wrapper">
+
+         <!-- Sidebar  -->
+         <div class="iq-sidebar">
+            <div class="iq-navbar-logo d-flex justify-content-between">
+
+               <img  id="adminPhoto" class="img-fluid rounded" alt="" width="55" height="100">
+               <div class="caption">
+                  <h6 class="mb-0 line-height" id="adminUsername"></h6>
+                  <p class="mb-0" id="adminPostiton"></p>
+               </div>
+               </a>
+               <div class="iq-menu-bt align-self-center" style="visibility: hidden;">
+                  <div class="wrapper-menu">
+                     <div class="main-circle"><i class="ri-menu-line"></i></div>
+                     <div class="hover-circle"><i class="ri-close-fill"></i></div>
+                  </div>
+               </div>
+            </div>
+            <div id="sidebar-scrollbar">
+               <nav class="iq-sidebar-menu">
+                  <ul id="iq-sidebar-toggle" class="iq-menu">                   
+                     
+                     <!--li>
+                        <a href="editAdmin.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-user-tie iq-arrow-left"></i><span>حساب الادمن</span></i></a>
+                     </li>
+                    
+                     <li>
+                        <a href="management.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-edit iq-arrow-left"></i><span>الادارة</span></i></a>
+                     </li>
+                    
+                     <li>
+                        <a href="shops.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-store iq-arrow-left"></i><span>المحلات</span></i></a>
+                     </li>
+                     <li>
+                        <a href="orders.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-tshirt iq-arrow-left"></i><span>الاوردرات</span></i></a>
+                     </li>
+                     
+                     <li>
+                        <a href="payments.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-money-bill iq-arrow-left"></i><span>دفع عمولات</span></i></a>
+                     </li>
+                     <li>
+                        <a href="statistics.html" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-chart-bar iq-arrow-left"></i><span>احصائيات</span></i></a>
+                     </li>
+                     <li>
+                        <a onclick="logout();" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-sign-out-alt iq-arrow-left"></i><span>تسجيل الخروج</span></i></a>
+                     </li-->
+
+                  </ul>
+               </nav>
+               <div class="p-3"></div>
+            </div>
+         </div>
+         
+         
+         <!-- Page Content  -->
+         <div id="content-page" class="content-page" style="position: relative; top: -80px;">
+            <div class="container-fluid">
+               <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="iq-card text-center">
+                       <div class="iq-card-header d-flex justify-content-between" dir="rtl">
+                          <div class="iq-header-title">
+                             <h4 class="card-title">لوجو المحل</h4>
+                          </div>
+                       </div>
+                       <div class="iq-card-body">
+                          <form>
+                            <div class="form-group row align-items-center">
+                                <div class="col-md-12">
+                                   <div class="profile-img-edit">
+                                      <img style="height: 140px;" id="showShopLogo" class="profile-pic" alt="profile-pic">
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="form-group">
+                                <input id="shopLogo" type="text" class="form-control pull-right" placeholder= "صورة المحل" style="border : 1px solid grey">
+                                <br>
+                                <br>
+                                <button onclick="editShopLogo()" type="button" class="btn btn-warning" style="color: white;">حفظ الصورة</button>
+                            </div>
+                          </form>
+                       </div>
+                    </div>
+              </div>
+
+                <div class="col-lg-9">
+                    <div class="iq-card">
+                       <div class="iq-card-header d-flex justify-content-between" dir="rtl">
+                          <div class="iq-header-title">
+                             <h4  class="card-title">بيانات المحل </h4>
+                          </div>
+                       </div>
+                       <div class="iq-card-body">
+                          <div class="new-user-info">
+                             <form>
+                                <div class="row" dir="rtl">
+                                   <div class="form-group col-md-6">
+                                      <input type="text" class="form-control pull-right" placeholder= "اسم المحل" id="shopName">
+                                   </div>
+                                   <div class="form-group col-md-6">
+                                    <input type="text" class="form-control pull-right" placeholder= "رقم التليفون" id="shopPhone">
+                                 </div>
+                                   <div class="form-group col-md-6">
+                                    <input type="text" class="form-control pull-right" placeholder= "العنوان" id="shopAddress">
+                                 </div>                
+                                   <div class="form-group col-md-6">
+                                    <select class="form-control" id="stateSelect" onchange="stateChanged();">
+                                       <option value="state">المحافظة</option>
+                                       <option value="alex">الإسكندرية</option>
+                                       <option value="ismailia">الإسماعيلية</option>
+                                       <option value="aswan">أسوان</option>
+                                       <option value="asiot">أسيوط</option>
+                                       <option value="luxor">الأقصر</option>
+                                       <option value="red sea">البحر الأحمر</option>
+                                       <option value="behera">البحيرة</option>
+                                       <option value="bani swif">بني سويف</option>
+                                       <option value="borsaid">بورسعيد</option>
+                                       <option value="south_sinani">جنوب سيناء</option>
+                                       <option value="giza">الجيزة</option>
+                                       <option value="dakahlia">الدقهلية</option>
+                                       <option value="domyat">دمياط</option>
+                                       <option value="sohag">سوهاج</option>
+                                       <option value="suiz">السويس</option>
+                                       <option value="sharkia">الشرقية</option>
+                                       <option value="north_sinai">شمال سيناء</option>
+                                       <option value="gharbia">الغربية</option>
+                                       <option value="faiom">الفيوم</option>
+                                       <option value="cairo">القاهرة</option>
+                                       <option value="qalobia">القليوبية</option>
+                                       <option value="qena">قنا</option>
+                                       <option value="kafr_elsheikh">كفر الشيخ</option>
+                                       <option value="matroh">مطروح</option>
+                                       <option value="monofya">المنوفية</option>
+                                       <option value="elminya">المنيا</option>
+                                       <option value="new_vallage">الوادي الجديد</option>
+                                        </select>
+                                     </div>                
+                                   <div class="form-group col-md-6">
+                                    <select id="centerSelect" class="form-control" onchange="centerChanged();">
+                                       <option>المركز</option>
+                                    </select>
+                                 </div>                
+                                   <div class="form-group col-md-6">
+                                    <input type="text" class="form-control pull-right" placeholder= "خط طول" id="shopLong">
+                                 </div>                
+                                   <div class="form-group col-md-6">
+                                    <input type="text" class="form-control pull-right" placeholder= "دائرة عرض" id="shopLat">
+                                 </div>                
+                                   <div class="form-group col-md-6">
+                                    <input type="text" class="form-control pull-right" placeholder= "الظهور اولا" id="position">
+                                 </div>                
+                              </div>
+                                <hr>
+                                <div class="text-center">
+                                    <button type="button" onclick="editShop();" class="btn btn-warning" style="color: white;">حفظ البيانات</button>
+                                </div>
+                             </form>
+                          </div>
+                       </div>
+                    </div>
+                 </div>   
+                 <div class="col-lg-12">
+                    <div class="iq-card">
+                       <div class="iq-card-header d-flex justify-content-between" dir="rtl">
+                          <div class="iq-header-title">
+                             <h4  class="card-title">الصور</h4>
+                          </div>
+                          <div class="iq-card-header-toolbar d-flex align-items-center">
+                            <div class="col-lg-6 text-left">
+                                <div class="iq-search-bar">
+                                    <form action="#" class="searchbox">
+                                       <div class="row">
+                                          <div class="col-lg-8">
+                                             <input id="addImage" type="text" class="text search-input" placeholder="الرابط" style="border: 1px solid grey;" dir="rtl">
+                                          </div>
+                                          <div class="col-lg-4">
+                                             <button type="button" onclick="addShopImage();" class="btn btn-success">اضافة الصورة</button>
+                                          </div>
+                                       </div>
+                                     </form>
+                                 </div>    
+                            </div>
+                         </div>              
+                       </div>
+                       <div class="iq-card-body">
+                          <div class="new-user-info">
+                             <form>
+                                <div class="row" id="imageNode">
+
+                                    <!--div class="col-sm-3">
+                                        <div class="card iq-mb-3">
+                                           <img src="images/page-img/07.jpg" class="card-img-top" alt="#">
+                                           <div class="card-body">
+                                              <a href="#" class="btn btn-danger">حذف</a>
+                                           </div>
+                                        </div>
+                                     </div>
+                                     <div class="col-sm-3">
+                                        <div class="card iq-mb-3">
+                                           <img src="images/page-img/07.jpg" class="card-img-top" alt="#">
+                                           <div class="card-body">
+                                              <a href="#" class="btn btn-danger">حذف</a>
+                                           </div>
+                                        </div>
+                                     </div>
+                                     <div class="col-sm-3">
+                                        <div class="card iq-mb-3">
+                                           <img src="images/page-img/07.jpg" class="card-img-top" alt="#">
+                                           <div class="card-body">
+                                              <a href="#" class="btn btn-danger">حذف</a>
+                                           </div>
+                                        </div>
+                                     </div>
+                                     <div class="col-sm-3">
+                                        <div class="card iq-mb-3">
+                                           <img src="images/page-img/07.jpg" class="card-img-top" alt="#">
+                                           <div class="card-body">
+                                              <a href="#" class="btn btn-danger">حذف</a>
+                                           </div>
+                                        </div-->
+                                     </div>
+                                  </div>
+                                <hr>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-warning" style="color: white;">حفظ الصور</button>
+                                </div>
+                             </form>
+                          </div>
+                       </div>
+                    </div>
+                 </div>   
+         </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Appear JavaScript -->
+      <script src="js/jquery.appear.js"></script>
+      <!-- Countdown JavaScript -->
+      <script src="js/countdown.min.js"></script>
+      <!-- Counterup JavaScript -->
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <!-- Wow JavaScript -->
+      <script src="js/wow.min.js"></script>
+      <!-- Apexcharts JavaScript -->
+      <script src="js/apexcharts.js"></script>
+      <!-- Slick JavaScript -->
+      <script src="js/slick.min.js"></script>
+      <!-- Select2 JavaScript -->
+      <script src="js/select2.min.js"></script>
+      <!-- Owl Carousel JavaScript -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- Magnific Popup JavaScript -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Smooth Scrollbar JavaScript -->
+      <script src="js/smooth-scrollbar.js"></script>
+      <!-- lottie JavaScript -->
+      <script src="js/lottie.js"></script>
+      <!-- am core JavaScript -->
+      <script src="js/core.js"></script>
+      <!-- am charts JavaScript -->
+      <script src="js/charts.js"></script>
+      <!-- am animated JavaScript -->
+      <script src="js/animated.js"></script>
+      <!-- am kelly JavaScript -->
+      <script src="js/kelly.js"></script>
+      <!-- am maps JavaScript -->
+      <script src="js/maps.js"></script>
+      <!-- am worldLow JavaScript -->
+      <script src="js/worldLow.js"></script>
+      <!-- Style Customizer -->
+      <script src="js/style-customizer.js"></script>
+      <!-- Chart Custom JavaScript -->
+      <script src="js/chart-custom.js"></script>
+      <!-- Custom JavaScript -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>
